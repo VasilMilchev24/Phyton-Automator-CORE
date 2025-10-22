@@ -26,7 +26,7 @@ playwright_bot/
 
 
 ```bash
-
+1. Clone the repository
 
 git clone <repo_url>
 cd playwright_bot
