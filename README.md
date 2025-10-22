@@ -1,8 +1,10 @@
 # Python Automator
 
 ## Overview
-This Python project demonstrates a simple web automation bot using Playwright.
-It can navigate a website, click elements, type text, and extract information.
+This Python project demonstrates a simple web automation bot using Playwright. 
+
+It can navigate a website, log in, search, filter, click elements, type text, and extract information. 
+
 The project is structured with modular components for maintainability.
 
 ## Project Structr
