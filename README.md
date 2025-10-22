@@ -5,7 +5,8 @@ This Python project demonstrates a simple web automation bot using Playwright.
 It can navigate a website, click elements, type text, and extract information.
 The project is structured with modular components for maintainability.
 
-## Project Structure
+## Project Structr
+```text
 playwright_bot/
 │
 ├── browser/
@@ -18,12 +19,15 @@ playwright_bot/
 ├── requirements.txt # Python dependencies
 ├── README.md # This file
 └── .gitignore # Files/folders to ignore in Git
+```
 
 
 ## Setup Instructions
 
-1. Clone the repository:
+
 ```bash
+
+
 git clone <repo_url>
 cd playwright_bot
 
