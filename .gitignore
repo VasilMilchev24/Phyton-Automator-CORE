@@ -1,0 +1,9 @@
+#.env - For purposes of the interview team to test my project I will allow the use of my API key.
+# Which is why .env is not included in .gitignore. In any other scenarios .env would be included in .gitignore to protect sensitive information.
+venv/
+__pycache__/
+*.pyc
+.playwright/
+node_modules/
+*.log
+.DS_Store
