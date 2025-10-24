@@ -38,5 +38,14 @@ python -m playwright install   # if using Playwright browser local
 npx @playwright/mcp@latest
 # Run locally:
 python main.py
-# Or start API:
-uvicorn web.api:app --reload --port 8000
+
+5. Check console logs for results.
+
+````
+
+
+
+Example output 
+
+<img width="1111" height="193" alt="image" src="https://github.com/user-attachments/assets/8109754b-6b84-4046-8828-530d89f49db2" />
+
