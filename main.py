@@ -1,21 +1,19 @@
 from browser.driver import BrowserDriver
-from browser.task import example_task
+from ai.brain import plan_and_execute_sync
 from utils.logger import log_info, log_error
 
-def main():
-
-    driver = BrowserDriver(headless=True)
-
-    driver.start()
-
+def run_goal(goal: str):
+    driver = BrowserDriver(headless=False)
     try:
-        example_task(driver.page)
-
+        driver.start()
+        res = plan_and_execute_sync(driver.page, goal)
+        log_info("FINAL RESULT:")
+        log_info(str(res))
     except Exception as e:
-        log_error(f" Unexpected error in main: {e}")
-
+        log_error(f"Main run error: {e}")
     finally:
         driver.stop()
 
 if __name__ == "__main__":
-    main()
+    user_goal = input("Enter goal (e.g. 'Search woman dress, sort by lowest, return name price link'): ")
+    run_goal(user_goal)
