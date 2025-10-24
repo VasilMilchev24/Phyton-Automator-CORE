@@ -30,6 +30,6 @@ class BrowserDriver:
                 self.browser.close()
             if self.playwright:
                 self.playwright.stop()
-            log_info("Browser closed successfully.")
+            log_info("Browser stoped.")
         except Exception as e:
-            log_error(f"Failed to close browser: {e}")
+            log_error(f"Error during browser stop: {e}")
